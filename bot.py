@@ -30,7 +30,7 @@ DEDUP_WINDOW      = 20
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY, timeout=30.0, max_retries=2)
+client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 CATEGORIAS   = ["Comida", "Transporte", "Entretenimiento", "Salud", "Deuda", "Servicios", "Compras", "Otro"]
 METODOS_PAGO = ["Nequi", "Daviplata", "Bancolombia", "Tarjeta Visa", "Tarjeta Mastercard", "Efectivo", "Otro"]
